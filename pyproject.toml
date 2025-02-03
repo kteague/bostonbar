@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bostonbar"
+version = "0.1dev"
+dependencies = [
+  "zope.schema",
+]
+requires-python = ">=3.12"
+authors = [
+  {name = "Kevin Teague", email = "primary.kteague@gmail.com"},
+]
+maintainers = [
+  {name = "Kevin Teague", email = "primary.kteague@gmail.com"}
+]
+description = "BostonBar: a cloud orchestration platform for Kubernetes and friends."
+readme = "README.md"
+license = {file = "LICENSE.md"}
+keywords = ["kubernetes", "aws", "cloud"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Repository = "https://github.com/kteague/bostonbar"
+"Bug Tracker" = "https://github.com/kteague/bostonbar/issues"
+
+[project.scripts]
+bb = "bb.cli:cli"
